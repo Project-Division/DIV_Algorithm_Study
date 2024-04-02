@@ -23,17 +23,32 @@
 
 # 방향
 
-- ## 코딩테스트 대비
-
-    - ## 
-
 - ## 알고리즘 스터디
 
+    - #### 백준의 여러 자료구조, 알고리즘 EASY 문제집을 풀면서 실력 향상
+
+    - #### 문제집 링크
+
+        | 알고리즘 종류 | 문제집 링크  |
+        | --- | ---|
+        | BFS/DFS | https://www.acmicpc.net/workbook/view/7754 |
+        | 문자열 | https://www.acmicpc.net/workbook/view/7774 |
+        | 그리디 | https://www.acmicpc.net/workbook/view/7767 |
+        | 이분탐색 | https://www.acmicpc.net/workbook/view/16481 |
+        | 스택, 큐, 덱 | https://www.acmicpc.net/workbook/view/7750 |
+        | 완전탐색 | https://www.acmicpc.net/workbook/view/7770 |
+        | 시뮬레이션 | https://www.acmicpc.net/workbook/view/7741 |
+
+<br>
+
+- ## 코딩테스트 대비
+
     - ## solved.ac
+
+        - ### 난이도별로 문제를 해결해보면서 실력 향상
+
         - ### [링크](https://solved.ac/class)
 
         ![image](https://github.com/Project-Division/DIV_Algorithm_Study/assets/68108664/81f7a49a-b3d6-475f-a3f4-b933cc6279d0)
 
-        - ### 레벨별로 문제를 해결할 수 있습니다.
-
-            ![image](https://github.com/Project-Division/DIV_Algorithm_Study/assets/68108664/cb65f833-9caa-49b4-8dba-42411f2ceb82)
+        ![image](https://github.com/Project-Division/DIV_Algorithm_Study/assets/68108664/cb65f833-9caa-49b4-8dba-42411f2ceb82)
