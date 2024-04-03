@@ -81,6 +81,7 @@
 - ### 3. 오랜 시간 도전했지만 해결에 실패한 문제는 풀이를 참고하고, 풀이를 참고한 것들은 따로 표시를 해주시면 됩니다.
 
     - ### 예) 파일 이름 XXXX_풀이참고.md
+    - ### [풀이 참고의 예시](https://github.com/Project-Division/DIV_Algorithm_Study/blob/main/%EA%B9%80%EA%B8%B0%EC%88%98/0%EC%A3%BC%EC%B0%A8/1074_%ED%92%80%EC%9D%B4%EC%B0%B8%EA%B3%A0.md)
 
 <br>
 
