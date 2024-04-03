@@ -72,6 +72,10 @@
 
     - ### [마크다운 작성법 참고자료](https://www.heropy.dev/p/B74sNE)
 
+    - #### `[Tip]` VS Code로 마크다운을 작성하면 실시간으로 미리보기를 확인할 수 있습니다.
+        ![image](https://github.com/Project-Division/DIV_Algorithm_Study/assets/68108664/0eb66c66-9abd-463e-9506-f2b0d98d678f)
+
+
 <br>
 
 - ### 3. 오랜 시간 도전했지만 해결에 실패한 문제는 풀이를 참고하고, 풀이를 참고한 것들은 따로 표시를 해주시면 됩니다.
