@@ -81,3 +81,5 @@
 <br>
 
 - ### 4. 깃허브에 업로드 하는 방법
+
+    - ### [깃허브 업로드 설명서](https://github.com/Project-Division/DIV_Algorithm_Study/blob/main/how_to_upload.md)
