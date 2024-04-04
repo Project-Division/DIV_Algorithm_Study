@@ -62,15 +62,51 @@
         - #### 커밋 기록에 남길 메시지를 메시지 자리에 넣으시면 됩니다.
             ![image](https://github.com/Project-Division/DIV_Algorithm_Study/assets/68108664/bd29028f-86d0-4fe3-80d6-7a1546d26ae7)
 
+        - ### `GIT 설치 후 최초 COMMIT 시 필요한 작업`
+            
+            ```
+            git config --global user.email "이메일"
+            git config --global user.name "이름"
+            ```
+
+
+<br>
 
 - ### PUSH: 로컬 GIT을 GITHUB 원격 저장소로 업로드하는 작업입니다.
     - ### `git push`
+
+    - ### `GIT 설치 후 최초 push 시 필요한 작업`
+
+        - ### 1. GITHUB 우측상단 프로필 이미지 -> Settings
+            
+            ![image](https://github.com/Project-Division/DIV_Algorithm_Study/assets/68108664/ccdba8e6-890f-4c6a-9dba-95ec9a6c4856) | ![image](https://github.com/Project-Division/DIV_Algorithm_Study/assets/68108664/75ba97d3-5eec-411d-bb4f-af275cce4d27)
+             --- | --- |
+
+        - ### 2. 왼쪽 탭 제일 하단의 Developer Settings 클릭
+            ![image](https://github.com/Project-Division/DIV_Algorithm_Study/assets/68108664/971e405b-6073-4285-9916-e9442a698d82)
+
+        - ### 3. Personal access tokens - Tokens(classic) - Generate New Token
+            ![image](https://github.com/Project-Division/DIV_Algorithm_Study/assets/68108664/c64a1536-972b-42e9-958c-b3acdba56575)
+
+            ![image](https://github.com/Project-Division/DIV_Algorithm_Study/assets/68108664/d8bbabbe-092b-4136-949a-196019ad0e2d)
+
+        
+        - ### 4. repo만 체크, Note에 메모 작성 후 아래 Generate Token 클릭
+            ![image](https://github.com/Project-Division/DIV_Algorithm_Study/assets/68108664/4d8385e9-b661-4077-b83b-754bf26882ca)
+
+
+        - ### 5. 출력된 토큰 메모해두기
+            ![image](https://github.com/Project-Division/DIV_Algorithm_Study/assets/68108664/8b2650d2-2c1d-4179-9b08-3e48b1fde524)
+
+        - ### 6. 최초 push 시도했을 때 username에 본인의 깃허브 네임, 패스워드에 위에서 발급받은 토큰 입력
+            ![image](https://github.com/Project-Division/DIV_Algorithm_Study/assets/68108664/56ab2d82-002c-4906-8a98-255c1a580a22)
+
 
 ---
 <br><br>
 
 
-## `요약` 클론이 되어있고, 업로드할 파일도 준비되었을 때 업로드하기
+## `요약` 클론 및 위 세팅이 이미 되어있을 때 업로드 하기
 
 - ### 1. Clone 되어있는 저장소 폴더에서 터미널 창을 열기
 
