@@ -14,7 +14,7 @@
 - ### GITHUB에 올려져 있는 GIT 저장소를 로컬 GIT 저장소로 가져오는 방법입니다.
 
 - ### <span style="color: red;">Clone은 최초 1회만 해주시면 됩니다.</span>
-    - ### Clone이 이미 되어있는 상태라면 Push부터 진행 해주시면 됩니다.
+    - ### Clone이 이미 되어있는 상태라면 Pull부터 진행 해주시면 됩니다.
 
 <br>
 
