@@ -47,3 +47,8 @@
         
         return answer
     ```
+
+<br>
+
+- ## 결과
+    ![image](https://github.com/Project-Division/DIV_Algorithm_Study/assets/68108664/f75b6c37-fb26-4ad6-b6a6-dff2ef499b75)
