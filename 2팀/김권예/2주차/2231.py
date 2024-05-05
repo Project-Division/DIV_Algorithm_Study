@@ -7,7 +7,8 @@ n = int(input())
 result = 0
 
 for i in range(1,n+1):
-    # str로 바꾸고 각 자리를 더하여 m에 저장
+    # map을 사용하여 n을 str로 바꾸고
+    # 각 자리를 더하여 m에 저장
     m = sum(map(int, str(i)))
     if i + m == n:
         # 생성자를 발견한다면 i 값에 저장하고 break
