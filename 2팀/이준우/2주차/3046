@@ -1,0 +1,6 @@
+# 입력받고 공백기준으로 나눈 뒤 할당
+R1, S = map(int, input().split())
+
+R2 = 2 * S - R1
+
+print(R2)
