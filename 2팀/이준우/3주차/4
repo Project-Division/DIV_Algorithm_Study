@@ -1,0 +1,22 @@
+def printTwoElements(arr):
+    n = len(arr)
+    temp = [0] * n 
+    repeatingNumber = -1  # 중복된 숫자를 저장할 변수
+    missingNumber = -1  # 누락된 숫자를 저장할 변수
+
+    for i in range(n):
+        temp[arr[i] - 1] += 1
+        if temp[arr[i] - 1] > 1: # 중복 숫자를 발견 할 시
+            repeatingNumber = arr[i]  
+    for i in range(n):
+        if temp[i] == 0:
+            missingNumber = i + 1 # 누락 숫자를 발견 할 시
+            break  
+
+    print("중복된 숫자는", repeatingNumber, "입니다.")
+    print("누락된 숫자는", missingNumber, "입니다.")
+
+
+arr = [7, 3, 4, 5, 5, 6, 2]
+printTwoElements(arr)
+
