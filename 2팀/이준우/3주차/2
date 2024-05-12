@@ -1,0 +1,14 @@
+# 리스트 중간에 빈 정수를 찾는 함수
+def getMissingNo(arr, n):
+    total = (n + 1)*(n + 2)/2
+    sum_of_A = sum(arr)
+    return total - sum_of_A
+
+# 다이버 코드
+if __name__ == '__main__':
+    arr = [1, 2, 3, 5]
+    N = len(arr)
+    
+    miss = getMissingNo(arr, N)
+    print(miss)
+    
