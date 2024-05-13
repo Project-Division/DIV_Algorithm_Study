@@ -1,0 +1,33 @@
+class Node:
+    def __init__(self,val):
+        self.data = val
+        self.left = None
+        self.right = None
+
+class Solution:
+    def serialize(self, root):
+        # 이진 트리를 직렬화하는 함수
+        def serializeUtil(node, a):
+            # 노드가 None이면 직렬화하지 않음
+            if node is None:
+                return
+            # 노드의 데이터를 리스트에 추가
+            a.append(node.data)
+            # 왼쪽 오른쪽 서브트리를 재귀로 직렬화
+            serializeUtil(node.left, a)
+            serializeUtil(node.right, a)
+
+        serialized = []
+        serializeUtil(root, serialized)
+        return serialized
+
+    def deSerialize(self, a):
+        # 직렬화된 리스트를 역직렬화하여 이진 트리를 재구성하는 함수
+        def reverse():
+            val = a.pop(0)
+            node = Node(val)
+            node.left = reverse()
+            node.right = reverse()
+            return node
+
+        return reverse()
