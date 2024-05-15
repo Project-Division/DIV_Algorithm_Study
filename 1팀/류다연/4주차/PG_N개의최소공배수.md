@@ -13,10 +13,10 @@
 - ## 코드
     ```python
     def solution(arr):
-    res = 1
-    for i in arr:
-        res = lcm(res, i)
-    return res
+        res = 1
+        for i in arr:
+            res = lcm(res, i)
+        return res
     
     # 최대공약수
     def gcd(a, b):
