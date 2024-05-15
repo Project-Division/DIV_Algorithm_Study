@@ -1,4 +1,4 @@
-# 백준 17433 _ 신비로운 수
+# 프로그래머스 _ N개의 최소공배수
 
 - ## 문제
     - ### [링크](https://school.programmers.co.kr/learn/courses/30/lessons/12953?language=python3)
