@@ -1,0 +1,13 @@
+import random
+
+# (1) [1, 1000] 사이의 랜덤 정수 100개를 가지는 리스트 randomA, randomB 생성
+randomA = [random.randint(1, 1000) for _ in range(100)]
+randomB = [random.randint(1, 1000) for _ in range(100)]
+
+# (2) 두 리스트의 같은 index의 요소를 비교하여 randomA의 element가 큰 경우의 개수를 구하는 코드
+count_greater_A = sum([1 for a, b in zip(randomA, randomB) if a > b])
+
+# 결과 출력
+print("randomA: %s" %randomA)
+print("randomB: %s" %randomB)
+print("randomA의 element가 randomB의 element보다 큰 경우의 개수: %d" %count_greater_A)
