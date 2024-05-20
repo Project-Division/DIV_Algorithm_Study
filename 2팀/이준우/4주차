@@ -1,0 +1,13 @@
+num = int(input("정수를 입력하세요: "))
+
+# 입력받은 숫자가 음수인 경우
+if num < 0:
+    # 양수일 경우 계산 후 음수 변환
+    num = abs(num)
+    sum_of_digits = sum(int(digit) for digit in str(num))
+    sum_of_digits = -sum_of_digits
+else:
+    # 양수인 경우 각 자리수의 합을 계산
+    sum_of_digits = sum(int(digit) for digit in str(num))
+
+print("각 자리수의 합은 %d입니다." %sum_of_digits)

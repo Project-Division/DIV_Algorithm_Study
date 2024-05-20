@@ -1,0 +1,33 @@
+import re
+from collections import Counter
+
+# 파일을 읽고 질문에 답하는 함수
+def process_news_file(filename):
+    # (1) 파일의 줄 수 출력
+    with open(filename, 'r', encoding='cp949') as file:
+        lines = file.readlines()
+        num_lines = len(lines)
+        print("파일의 줄 수: %d" %num_lines)
+
+    # (2) 기호를 빈칸으로 변경
+    text = ''.join(lines)
+    text = re.sub(r'[,.“”‘’()~\-…]', ' ', text)
+
+    # (3) 음절별 출현 횟수 카운트, 가나다 순 출력
+    syllable_counts = Counter(text.replace(' ', ''))
+    sorted_syllables = sorted(syllable_counts.items())
+
+    print("\n음절별 출현 횟수 (가나다 순):")
+    for syllable, count in sorted_syllables:
+        print("%s: %d" %(syllable, count))
+
+    # (4) 단어의 출현 빈도 역순으로 정렬 후 출력
+    words = text.split()
+    word_counts = Counter(words)
+    sorted_words = word_counts.most_common()
+
+    print("\n단어 출현 빈도 (역순):")
+    for word, count in sorted_words:
+        print("%s: %d" %(word, count))
+
+process_news_file('news.txt')
