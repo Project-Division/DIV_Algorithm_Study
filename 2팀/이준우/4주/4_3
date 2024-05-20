@@ -1,0 +1,44 @@
+def to_decimal_to_base(decimal_number, base):
+    if not (2 <= base <= 16):
+        raise ValueError("2 이상 16 이하의 정수여야 합니다.")
+    
+    # 10진수를 입력 진수로 변환하는 함수 /정수 부분
+    def integer_to_base(n, base):
+        digits = "0123456789ABCDEF"
+        result = ""
+        if n == 0:
+            return "0"
+        while n > 0:
+            result = digits[n % base] + result
+            n = n // base
+        return result
+    
+    # 소수 부분
+    def fraction_to_base(f, base, precision=10):
+        digits = "0123456789ABCDEF"
+        result = ""
+        while f > 0 and len(result) < precision:
+            f *= base
+            digit = int(f)
+            result += digits[digit]
+            f -= digit
+        return result
+
+    # 정수 부분과 소수 부분을 분리
+    integer_part = int(decimal_number)
+    fraction_part = decimal_number - integer_part
+    
+    integer_result = integer_to_base(integer_part, base)
+    fraction_result = fraction_to_base(fraction_part, base)
+    
+    if fraction_result:
+        return "%s.%s" %(integer_result, fraction_result)
+    else:
+        return integer_result
+
+# 사용자로부터 실수와 변환할 진수 입력 받는 코드
+decimal_number = float(input("변환할 10진수 실수를 입력하세요: "))
+base = int(input("변환할 진수를 입력하세요 (2-16): "))
+
+result = to_decimal_to_base(decimal_number, base)
+print("%f(10) => %s(%d)" %(decimal_number, result, base))
