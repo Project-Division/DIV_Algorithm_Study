@@ -23,19 +23,19 @@
     def solution(n, money):
         table = [[0 for _ in range(len(money))] for _ in range(n + 1)]
         for x in range(len(money)):
-            table[0][x] = 1
+            table[0][x] = 1 # x번 동전만 사용했을 경우에 1을 더해주기 위하여 금액 0을 만든 경우를 1로 초기화 하였음
         
         for x in range(len(money)): # x번 동전까지 사용
             for y in range(1, n + 1): # y금액 만들기
-                curr_coin = money[x] # 현재 동전
+                curr_coin = money[x] # x번 동전 금액
                 if y - curr_coin >= 0:
-                    table[y][x] += table[y - curr_coin][x]
+                    table[y][x] += table[y - curr_coin][x] # x번 동전까지 사용하여 (y 금액 - x번 동전 금액) 만든 경우의 수
             
                 if x >= 1:
-                    table[y][x] += table[y][x - 1]
+                    table[y][x] += table[y][x - 1] # x - 1번 동전까지 사용하여 y금액 만든 경우의 수
             
         
-        answer = table[n][len(money) - 1]
+        answer = table[n][len(money) - 1] # 동전을 모두 사용하여 n 금액을 만든 경우의 수
         return answer
     ```
 
