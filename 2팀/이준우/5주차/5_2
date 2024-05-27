@@ -1,0 +1,36 @@
+import re
+from collections import Counter
+
+def news_file_read(filename):
+    try:
+        with open(filename, 'r', encoding='cp949') as file:
+            content = file.read()
+
+        # (1) 글자 수 출력
+        num_characters = len(content)
+        print("글자 수 (빈칸, 줄바꿈 포함): %d" %num_characters)
+
+        # (2) 문장 수 출력
+        sentences = re.split(r'[.]+', content)
+        num_sentences = len(sentences) - 1 if content.endswith('.') else len(sentences)
+        print("문장 수: %d" %num_sentences)
+
+        # (3) 문장 기호 제거
+        cleaned_content = re.sub(r'[,.“”‘’()~\-…]', '', content)
+
+        # (4) 단어의 출현 빈도 역순으로 정렬후 출력
+        words = cleaned_content.split()
+        word_counts = Counter(words)
+        sorted_words = word_counts.most_common()
+
+        print("\n단어 출현 빈도 (역순):")
+        for word, count in sorted_words:
+            print("%s: %d" %(word, count))
+
+    except FileNotFoundError:
+        print("파일경로가 잘못되었습니다.")
+    except UnicodeDecodeError:
+        print("인코딩이 잘못되었습니다.")
+
+# 파일을 처리하는 함수 호출
+news_file_read('news.txt')
