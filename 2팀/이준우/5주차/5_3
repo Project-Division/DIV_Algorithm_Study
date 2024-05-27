@@ -1,0 +1,32 @@
+import random
+
+# (1) [1, 1000] 사이의 랜덤 정수 100개를 가지는 리스트 randomA, randomB를 생성
+randomA = [random.randint(1, 1000) for _ in range(100)]
+randomB = [random.randint(1, 1000) for _ in range(100)]
+
+# (2) randomA와 randomB를 오름차순으로 정렬하여 sortedA와 sortedB 리스트를 생성
+sortedA = sorted(randomA)
+sortedB = sorted(randomB)
+
+# (3) sortedA와 sortedB를 합한 sortedC 리스트를 생성
+def merge_sorted_list(list1, list2):
+    sortedC = []
+    i, j = 0, 0
+    
+    for _ in range(len(list1) + len(list2)):
+        if i < len(list1) and (j >= len(list2) or list1[i] < list2[j]):
+            sortedC.append(list1[i])
+            i += 1
+        else:
+            sortedC.append(list2[j])
+            j += 1
+            
+    return sortedC
+
+sortedC = merge_sorted_list(sortedA, sortedB)
+
+print("randomA:", randomA)
+print("\nrandomB:", randomB)
+print("\nsortedA:", sortedA)
+print("\nsortedB:", sortedB)
+print("\nsortedC:", sortedC)
