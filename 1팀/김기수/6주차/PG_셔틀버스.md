@@ -31,6 +31,7 @@
         
         curr_bus_arrive = 0 # 마지막 버스 도착시간
         curr_p_count = 0 # 마지막 버스에 탑승한 크루 수
+        curr_p_arrive = 0 # 마지막으로 버스에 탑승한 크루의 도착시간
         for bus_seq in range(n):
             curr_bus_arrive = str_to_time("09:00") + (t *  bus_seq) # 현재 버스 도착 시간
             
