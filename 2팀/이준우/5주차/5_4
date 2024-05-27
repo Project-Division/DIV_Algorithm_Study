@@ -1,0 +1,26 @@
+import pandas as pd
+
+#(1)
+df = pd.read_csv('korean_floating_population_data.csv')
+
+ulsan_df = df[df['행정구역명'] == '울산광역시']
+
+# 남자10대와 여자10대 계산
+male_teenagers = ulsan_df['남자10대'].sum()
+female_teenagers = ulsan_df['여자10대'].sum()
+total_teenagers = male_teenagers + female_teenagers
+
+print("남자10대와 여자10대의 총 인원:", total_teenagers)
+
+#(2)
+areas = ulsan_df[ulsan_df['조사지역'].isin(["A", "B", "울산대 바보사거리"])]
+
+# 주중과 주말 조사 횟수 계산
+weekday_counts = areas[areas['주중/주말'] == '주중']['조사지역'].value_counts()
+weekend_counts = areas[areas['주중/주말'] == '주말']['조사지역'].value_counts()
+
+print("주중 조사 횟수:")
+print(weekday_counts)
+
+print("\n주말 조사 횟수:")
+print(weekend_counts)
