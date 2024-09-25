@@ -1,2 +1,3 @@
 a = "test"
-print(a)
+b = "입니다"
+print(a + b)
