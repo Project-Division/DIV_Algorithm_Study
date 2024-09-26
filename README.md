@@ -10,7 +10,7 @@
 # 1. 규칙
 
 - ### <span style="color: red;">꾸준히 하는 것이 제일 중요합니다.</span>
-    - ### <span style="background-color: yellow;">주에 꼭 4개 이상을 풀어서 업로드 하셔야합니다.</span>
+    - ### <span style="background-color: yellow;">주에 꼭 4개 이상을 풀어서 업로드 하셔야합니다. 풀더 : 년도/학기/개인풀더/</span>
 
     - ### 한 문제를 풀이하는데 시간이 오래 걸렸거나 사정상 개수를 채우지 못할 수 있습니다.
         - #### <span style="background-color: yellow">브론즈레벨 이하 문제들은 해결하는 데 시간이 오래걸리지 않으므로 난이도가 낮은 문제들로 개수를 채워주시면 됩니다.</span>
