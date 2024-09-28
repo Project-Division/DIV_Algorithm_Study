@@ -1,0 +1,27 @@
+#백준 11650번입니다. https://www.acmicpc.net/problem/11650
+
+a = int(input())
+lst = []
+
+for i in range(a):
+    x, y = input().split(' ')
+    lst.append([int(x),int(y)])
+    
+for p in range(1, a):
+    for q in range(a-1):
+        if lst[p][0] < lst[q][0]:
+            c = lst[p]
+            lst[p] = lst[q]
+            lst[q] = c
+ 
+for i in range(1, a):
+    for o in range(a-1):
+        if lst[i][0] == lst[o][0] and lst[i][1] < lst[o][1]:
+            c = lst[i]
+            lst[i] = lst[o]
+            lst[o] = c
+
+# lst.sort() <-- 제일 간단한 방법
+    
+for i in range(a):
+    print(lst[i][0], lst[i][1])
