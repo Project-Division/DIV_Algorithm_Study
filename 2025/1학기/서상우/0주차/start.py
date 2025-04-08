@@ -1,0 +1,1 @@
+print("start 2025-1 coding test study")
